@@ -1,0 +1,9 @@
+    checks for imdb_id_movie_2023_clean :
+    - duplicate_count("TITLE") = 0 :
+        name : Ensure that all titles are unique
+    - missing_count("TITLE") = 0:
+        name : Ensure that all titles are present
+    - invalid_count("CLEANED_RATING") = 0:
+        name : Ensure that all ratings are valid
+        valid min  : 0
+        valid max : 10
